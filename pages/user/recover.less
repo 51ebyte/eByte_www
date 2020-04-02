@@ -1,0 +1,64 @@
+.recover_page {
+  background-color: #eeeeee !important;
+  .particles {
+    height: 100vh;
+  }
+
+  .header {
+    z-index: 20;
+    background: #ffffff;
+    box-shadow: 0 3px 12px 0 #d1dbe5;
+    height: 70px;
+    padding: 0 33px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    .logo {
+      width: 160px;
+      background-image: url('../../assets/logo/logo.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 160px 46px;
+      height: 70px;
+      text-indent: -9999px;
+      cursor: pointer;
+    }
+
+    .lang {
+      line-height: 70px;
+      text-align: right;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      float: right;
+
+      span {
+        color: #3171ff;
+        cursor: pointer;
+
+        &.curr {
+          color: rgba(2, 18, 65, 0.5);
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  .recover-modal {
+    position: fixed;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .ivu-steps {
+      background: white;
+      padding: 20px;
+      border-radius: 4px;
+    }
+  }
+}

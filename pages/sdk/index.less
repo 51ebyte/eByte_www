@@ -1,0 +1,208 @@
+.doc_index {
+  margin: 0 auto;
+  height: 100vh;
+  overflow: hidden;
+  // background-image: url("https://file.iviewui.com/dist/dc1e877946dd4568404a432623fca8fc.jpg");
+  background-image: url('../../assets/img/indexBg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: white;
+
+  .header {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    margin-left: 36px;
+    margin-right: 20px;
+    z-index: 99;
+    position: relative;
+
+    .logo {
+      img {
+        height: 50px;
+        vertical-align: middle;
+      }
+    }
+
+    .apps {
+      margin-left: 22px;
+      padding-left: 12px;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 24px;
+        background: #ebedee;
+        position: absolute;
+        top: 5px;
+        left: 0px;
+      }
+
+      .dropdown-text {
+        display: block;
+        color: #515a6e;
+        height: 32px;
+        line-height: 32px;
+        &:hover {
+          color: #57a3f3;
+        }
+      }
+
+      .apps-img,
+      .apps-name {
+        vertical-align: middle;
+      }
+
+      .apps-img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .apps-name {
+        display: inline-block;
+        margin-left: 6px;
+        font-size: 14px;
+      }
+    }
+
+    .search {
+      margin-left: 16px;
+
+      .ivu-select-selection {
+        border: 0;
+        background: transparent;
+        height: 32px;
+        position: relative;
+        box-shadow: none;
+      }
+
+      .ivu-select-arrow {
+        display: none !important;
+      }
+
+      .ivu-select-input {
+        outline: none;
+        font-size: 14px;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex: auto;
+      justify-content: flex-end;
+
+      .sign {
+        .ivu-dropdown {
+          padding-left: 5px;
+        }
+
+        .sign-btn {
+          .sign-name {
+            color: rgba(255, 255, 255, 0.8) !important;
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: 6px;
+            font-size: 14px;
+
+            &:hover {
+              color: rgba(255, 255, 255, 1) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    width: 40%;
+    height: calc(100vh - 120px);
+    position: relative;
+    overflow: hidden;
+
+    .body {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      .ivu-badge {
+        padding-top: 16px !important;
+        margin-bottom: 60px !important;
+        img {
+          height: 100px;
+          transition: all 1s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      .content {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
+      .actions {
+        vertical-align: middle;
+        margin-top: 60px;
+
+        .ivu-btn {
+          margin-bottom: 16px !important;
+          margin-right: 10px;
+        }
+
+        .btn-img,
+        .btn-text {
+          vertical-align: middle;
+        }
+
+        .btn-img {
+          width: 14px;
+        }
+      }
+    }
+    .lottie {
+      .fly {
+        width: 500px;
+        height: 286px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 3;
+      }
+      .effect {
+        width: 40%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 4;
+      }
+      .particles {
+        width: 40%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 2;
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+    height: 30px;
+    line-height: 18px;
+    color: #c5c8ce;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    a {
+      color: inherit;
+      &:hover {
+        color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+}

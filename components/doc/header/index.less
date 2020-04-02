@@ -1,0 +1,151 @@
+.doc {
+  .header {
+    height: 65px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+
+    .container {
+      padding-left: 2%;
+      width: 100%;
+      height: inherit;
+      display: flex;
+      align-items: center;
+
+      .logo {
+        img {
+          height: 48px;
+        }
+      }
+
+      .apps {
+        margin-left: 22px;
+        padding-left: 12px;
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 24px;
+          background: #ebedee;
+          position: absolute;
+          top: 5px;
+          left: 0px;
+        }
+
+        .dropdown-text {
+          display: block;
+          color: #515a6e;
+          height: 32px;
+          line-height: 32px;
+          &:hover {
+            color: #57a3f3;
+          }
+        }
+
+        .apps-img,
+        .apps-name {
+          vertical-align: middle;
+        }
+
+        .apps-img {
+          width: 24px;
+          height: 24px;
+        }
+
+        .apps-name {
+          display: inline-block;
+          margin-left: 6px;
+          font-size: 14px;
+        }
+
+        & + .search {
+          margin-left: 16px !important;
+          padding-left: 0px !important;
+        }
+
+        & + .menu {
+          margin-left: 26px !important;
+          padding-left: 0px !important;
+        }
+      }
+
+      .search {
+        margin-left: 22px;
+        padding-left: 12px;
+
+        .ivu-select-selection {
+          border: 0;
+          background: transparent;
+          height: 32px;
+          position: relative;
+          box-shadow: none;
+        }
+
+        .ivu-select-arrow {
+          display: none !important;
+        }
+
+        .ivu-select-input {
+          outline: none;
+          font-size: 14px;
+        }
+        & + .menu {
+          margin-left: 0px !important;
+          padding-left: 0px !important;
+        }
+      }
+
+      .menu {
+        height: inherit;
+        line-height: 65px;
+        display: flex;
+        align-items: center;
+        flex: auto;
+        margin-left: 22px;
+        padding-left: 12px;
+
+        a {
+          display: block;
+          height: inherit;
+          padding: 0 20px;
+          position: relative;
+          cursor: pointer;
+          z-index: 3;
+          transition: all 0.2s ease-in-out;
+          font-size: 14px;
+          color: #333333;
+          line-height: inherit;
+
+          &.active {
+            color: #2d8cf0;
+            border-bottom: 2px solid #2d8cf0;
+          }
+        }
+      }
+
+      .info {
+        width: 220px;
+        display: flex;
+        justify-content: flex-end;
+        .more {
+          width: 36px;
+          position: relative;
+          cursor: pointer;
+
+          .ivu-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}
