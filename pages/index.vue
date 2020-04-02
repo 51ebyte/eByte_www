@@ -35,7 +35,13 @@
      <div v-swiper:mySwiper="swiper.option" class="swiper" @mouseenter="swiperAction('stop')" @mouseleave="swiperAction('start')">
         <div class="swiper-wrapper">
           <template v-for="(item, index) in swiper.slide">
-            <div class="swiper-slide" :key="index"><img :src="item.src" /></div>
+            <div class="swiper-slide" :key="index">
+              <img :src="item.src" />
+              <div class="extend">
+                <h2 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration='0.5s' swiper-animate-delay='0s'>{{item.title}}</h2>
+                <p  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration='0.5s' swiper-animate-delay='0.5s' v-html="item.desc"></p>
+              </div>
+            </div>
           </template>
         </div>
         <div class="swiper-pagination swiper-pagination-bullets"></div>
@@ -74,6 +80,8 @@
 </template>
 
 <script>
+import "swiper-animate-cn/animate.min.css"
+import {swiperAnimateCache, swiperAnimate, clearSwiperAnimate} from "swiper-animate-cn"
 export default {
   layout: 'index',
   data() {
@@ -97,18 +105,35 @@ export default {
       swiper: {
         slide: [
           {
-            src: 'http://www.sunlue.com/templates/main/images/banner1.jpg'
+            src: 'http://www.sunlue.com/templates/main/images/banner1.jpg',
+            title:'专注旅游行业10年',
+            desc:'服务超过<span class="number">300</span>家知名景区'
+          },{
+            src: 'http://www.sunlue.com/templates/main/images/banner2.jpg',
+            title:'先有体验·后有决策',
+            desc:'让您拥有最完美的旅行体验'
           }
         ],
         option: {
           loop: true,
           autoplay: {
-            delay: 2000
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
           },
           centeredSlides: true,
           pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true
+          },
+          on: {
+            init: function () {
+              swiperAnimateCache(this); //隐藏动画元素
+              swiperAnimate(this); //初始化完成开始动画
+            },
+            slideChangeTransitionEnd: function () {
+              swiperAnimate(this)
+            },
           }
         }
       }
