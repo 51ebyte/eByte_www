@@ -2,12 +2,19 @@
   <div class="main">
     <div class="container">
       <Row :gutter="10">
+        <Col span="2">
+          <ul class="nav_com">
+            <li>推荐</li>
+            <li>动态</li>
+            <li>java</li>
+          </ul>
+        </Col>
         <Col span="16">
           <Card :bordered="false">
             <p slot="title">最新文章</p>
             <a href="#" slot="extra" @click.prevent="changeLimit">
                 <Icon type="ios-loop-strong"></Icon>
-                Change
+                更多
             </a>
             <List item-layout="vertical">
               <ListItem v-for="item in article" :key="item.title">
@@ -25,7 +32,7 @@
             </List>
           </Card>
         </Col>
-        <Col span="8">
+        <Col span="6">
           <Card>
             <p slot="title">精品</p>
             <a href="#" slot="extra" @click.prevent="changeLimit">

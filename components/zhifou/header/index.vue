@@ -3,7 +3,9 @@
     <div class="header">
       <div class="container">
         <div class="top">
-          <router-link :to="{ name: 'zhifou' }" class="logo"><img src="http://www.ebyte.com/\static\ebyte\geek.png" /></router-link>
+          <router-link :to="{ name: 'zhifou' }" class="logo">
+						<img src="../../../assets/logo/geek.png" />
+					</router-link>
           <div class="search">
             <div class="tab"><span class="active">文章</span></div>
             <div class="input">

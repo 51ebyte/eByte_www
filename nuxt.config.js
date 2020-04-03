@@ -1,7 +1,7 @@
 export default {
   // mode: 'spa',
   head: {
-    title: '字节极客',
+    title: 'eByteSDK字节极客',
     meta: [{
         charset: 'utf-8'
       },
@@ -120,5 +120,9 @@ export default {
     extend(config, ctx) {},
     analyze: false,
     maxChunkSize: 204800
+  },
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0' // default: localhost
   }
 }
