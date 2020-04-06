@@ -60,10 +60,12 @@ export default {
    ** Global CSS
    */
   css: [
-    '@/assets/css/common.less',
-    '@/assets/css/md.less',
     'swiper/dist/css/swiper.css',
-    'view-design/dist/styles/iview.css'
+    'view-design/dist/styles/iview.css',
+    '@/assets/css/common.less',
+    '@/assets/css/zhifou.less',
+    '@/assets/css/md.less',
+    '@/assets/theme/bytegeek.less'
   ],
   /*
    ** Plugins to load before mounting the App
@@ -119,7 +121,12 @@ export default {
      */
     extend(config, ctx) {},
     analyze: false,
-    maxChunkSize: 204800
+    maxChunkSize: 204800,
+    loaders: {
+      less: {
+        javascriptEnabled: true
+      }
+    }
   },
   server: {
     port: 8000, // default: 3000
