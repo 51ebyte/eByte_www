@@ -1,0 +1,214 @@
+@import './../../../../assets/theme/bytegeek.less';
+.user-home {
+  width: 1240px;
+  margin: 0 auto;
+  .me-wrap {
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+
+    .avatar {
+      position: relative;
+      height: 100px;
+      width: 100px;
+      float: left;
+      margin: 20px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+      }
+      .vip_icon {
+        position: absolute;
+        width: 32px;
+        height: 24.5px;
+        top: -18px;
+        left: 33px;
+        vertical-align: -0.15em;
+        fill: currentColor;
+      }
+    }
+    .main {
+      float: left;
+      width: 880px;
+      margin-top: 27px;
+      margin-bottom: 24px;
+      position: relative;
+      .lt_title {
+        color: #4d4d4d;
+        width: 100%;
+        height: 28px;
+
+        .icon {
+          height: 28px;
+          width: 30px;
+          border-radius: 4px;
+        }
+        .year {
+          position: absolute;
+          font-weight: 700;
+          font-size: 10px;
+          left: 12px;
+          top: 2px;
+          color: #fff;
+        }
+        .username {
+          display: inline-block;
+          font-size: 20px;
+          line-height: 28px;
+          padding-left: 10px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+      .job {
+        margin-top: 10px;
+        max-height: 38px;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        ._blank {
+          color: #e0e0e0;
+        }
+        .icon {
+          width: 16px;
+          height: 16px;
+          top: 0;
+          margin-top: 2px;
+          margin-right: 8px;
+        }
+        .vertical_line:before {
+          content: '';
+          position: relative;
+          display: inline-block;
+          left: 8px;
+          height: 10px;
+          width: 8px;
+          border-left: 1px solid #e0e0e0;
+        }
+        .github_img {
+          margin-left: 16px;
+          cursor: pointer;
+          img {
+            height: 16px;
+            width: 16px;
+          }
+        }
+      }
+      .description {
+        margin-top: 7px;
+        display: flex;
+        align-items: flex-start;
+        text-align: justify;
+        font-size: 14px;
+        color: #999;
+        line-height: 19px;
+        .icon {
+          width: 16px;
+          height: 16px;
+          margin-top: 2px;
+          margin-right: 8px;
+          color: #ca0c16;
+        }
+        .description_detail {
+          display: inline-block;
+          width: 856px;
+        }
+      }
+    }
+    .button {
+      .ivu-btn {
+        position: absolute;
+        font-size: 14px;
+        color: #4d4d4d;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 19px;
+        background: #fff;
+        top: 24px;
+        right: 32px;
+        border: 1px solid #ced2d9;
+        border-radius: 3px;
+        color: #d92e2e;
+        span {
+          display: inline-block;
+          padding: 5px 16px 6px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+  .me_chanel {
+    background: white;
+    .ivu-tabs {
+      .ivu-tabs-bar {
+        .ivu-tabs-nav {
+          .ivu-tabs-tab {
+            padding: 12px 16px;
+          }
+          .ivu-tabs-tab:hover,
+          .ivu-tabs-tab-active {
+            color: #ff5722;
+          }
+        }
+        .ivu-tabs-ink-bar {
+          background: #ff5722;
+        }
+      }
+      .ivu-tabs-content {
+        .ivu-tabs-tabpane {
+          padding: 0px 16px 16px;
+          .det {
+            position: relative;
+            padding-bottom: 16px;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+            .item {
+              display: inline-block;
+              font-family: MicrosoftYaHei;
+              font-size: 14px;
+              color: #4d4d4d;
+              text-align: center;
+              line-height: 24px;
+              &.access {
+                padding: 0 30px;
+              }
+              .icon {
+                width: 60px;
+                height: 20px;
+                position: relative;
+                top: 3px;
+              }
+            }
+          }
+          .item-list {
+            .ivu-list-item-meta {
+              .ivu-list-item-meta-content {
+                .ivu-list-item-meta-description {
+                  font-size: 14px;
+                  color: #858585;
+                  line-height: 24px;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 2;
+                  overflow: hidden;
+                }
+              }
+            }
+            .ivu-list-item-action {
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+          .more {
+            position: relative;
+            padding: 16px 0 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
