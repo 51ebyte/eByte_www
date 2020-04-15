@@ -106,12 +106,12 @@ export default {
         slide: [
           {
             src: 'http://www.sunlue.com/templates/main/images/banner1.jpg',
-            title:'专注旅游行业10年',
-            desc:'服务超过<span class="number">300</span>家知名景区'
+            title:'专注行业6年',
+            desc:'服务超过<span class="number">300</span>家知名网站'
           },{
             src: 'http://www.sunlue.com/templates/main/images/banner2.jpg',
             title:'先有体验·后有决策',
-            desc:'让您拥有最完美的旅行体验'
+            desc:'让您拥有最完美的体验'
           }
         ],
         option: {
