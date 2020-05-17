@@ -1,5 +1,6 @@
 <template>
-  <no-ssr><mavon-editor  codeStyle="tomorrow-night-blue" :toolbarsFlag="false" :subfield="false" defaultOpen="preview" previewBackground="white" v-model="html" /></no-ssr>
+  <no-ssr>
+    <mavon-editor  codeStyle="tomorrow-night-blue" :toolbarsFlag="false" :subfield="false" defaultOpen="preview" previewBackground="white" v-model="html" /></no-ssr>
 </template>
 
 <script>
@@ -8,7 +9,7 @@ export default {
   layout: 'doc',
   data() {
     return {
-      html: "<p style='text-align:center;'>数据加载中...</p>"
+      html: "数据加载中..."
     };
   },
   asyncData(context) {
@@ -40,7 +41,7 @@ export default {
     this.$axios.get(filePath).then(xhr => {
       that.html = xhr.data;
     }).catch(err => {
-      this.html = "<p style='text-align:center;'>暂无数据</p>";
+      this.html = "暂无数据";
       console.error(err.message);
     });
   }

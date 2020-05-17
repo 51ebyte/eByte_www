@@ -1,14 +1,14 @@
 export default {
-  // mode: 'spa',
+  mode: 'spa',
   head: {
-    title: 'eByteSDK字节极客',
+    title: '字节极客-Bytegeek',
     meta: [{
         charset: 'utf-8'
       },
       {
         hid: 'keywords',
         name: 'keywords',
-        content: '微信开发,微信 JAVA SDK,eByteSDK,JAVA 微信开发,JAVA 小程序开发,JAVA 微信支付开发,JAVA 企业微信开发'
+        content: '字节极客,Bytegeek,微信开发,微信 JAVA SDK,eByteSDK,JAVA 微信开发,JAVA 小程序开发,JAVA 微信支付开发,JAVA 企业微信开发'
       },
       {
         hid: 'description',
@@ -129,7 +129,7 @@ export default {
     }
   },
   server: {
-    port: 8000, // default: 3000
+    port: 3000, // default: 3000
     host: '0.0.0.0' // default: localhost
   }
 }

@@ -20,8 +20,8 @@
       </div>
       <div class="menu" v-if="menu != false">
         <router-link :to="{ name: 'sdk-doc' }" :class="[navActive == 'doc' ? 'active' : '']">文档</router-link>
-        <a href="https://github.com/51ebyte/eByteSDK_WeiXin">Github</a>
-        <a href="https://github.com/51ebyte/eByteSDK_WeiXin">Gitee</a>
+        <a href="https://github.com/51ebyte/eByteSDK_WeiXin" target="_blank">Github</a>
+        <a href="https://gitee.com/bytegeek/eByteSDK_WeiXin" target="_blank">Gitee</a>
       </div>
       <div class="info">
         <e-info></e-info>
