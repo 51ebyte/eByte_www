@@ -17,7 +17,7 @@
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "lottie-web": "^5.6.3",
-    "mavon-editor": "^2.7.7",
+    "mavon-editor": "^2.8.2",
     "nuxt": "^2.0.0",
     "qrcode": "^1.4.4",
     "swiper-animate-cn": "^1.1.1",
